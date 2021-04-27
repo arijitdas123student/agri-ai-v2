@@ -6,9 +6,30 @@ Pssh, here is our public EI Studio project. Check it out [here](https://studio.e
 
 We have used about 1500 thermal images of damselfly and buttefly that can detect with an accuracy of 100% which is astonishing! :)
 
-## Deploying on Raspberry Pi's using balena
+### Hardware
+<table>
+<tr><td>
+<img height="24px" src="https://files.balena-cloud.com/images/fincm3/2.58.3%2Brev1.prod/logo.svg" alt="fincm3" style="max-width: 100%; margin: 0px 4px;"></td><td> balenaFin</td>
+</tr>
+<tr><td>
+<img height="24px" src="https://files.balena-cloud.com/images/raspberrypi3/2.58.3%2Brev1.prod/logo.svg" alt="raspberrypi3" style="max-width: 100%; margin: 0px 4px;"></td><td>Raspberry Pi 3 Model B+</td>
+</tr>
+<tr><td>
+<img height="24px" src="https://files.balena-cloud.com/images/raspberrypi4-64/2.65.0%2Brev1.prod/logo.svg" alt="raspberrypi4-64" style="max-width: 100%; margin: 0px 4px;"></td><td>Raspberry Pi 4 Model B</td>
+</tr>
+</table>
 
-Click on the following link to deploy the application to your Balena account:
+ [Raspberry Pi camera](https://www.raspberrypi.org/products/camera-module-v2/) or any USB camera.
+
+### Software
+
+* Sign up for a free [Edge Impulse account](https://edgeimpulse.com/)
+* Sign up for a free [BalenaCloud account](https://www.balena.io/)
+* [balenaEtcher](https://www.balena.io/etcher/)
+
+## Deploying the code onto your Raspberry Pi using balena
+
+Click on the *deploy-with-balena* button as given below, which will help you to deploy your application to balenaCloud and then to your Raspbery Pi in **one-click!**
 
 [![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/arijitdas123student/agri-ai-v2)
 
