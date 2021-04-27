@@ -9,6 +9,12 @@ window.onbeforeunload = function() {
   }
 };
 
+async function clearGallery(){
+  console.log('clearing gallery...');
+  let response = await fetch("/clean");
+  await getGallery();
+}
+
 function showFullscreenMessage() {
   if (state === 1) {
     var elem = document.getElementById('fullscreen-info-1');
@@ -297,35 +303,63 @@ if (window.navigator.userAgent.indexOf("Edge") > -1  || safariOnIos) {
 }
 
 
-async function getClassification() {
-  let response = await fetch("/classification");
-  console.log("fetching");
 
-  if (response.status == 502) {
-    await getClassification();
-  } else if (response.status != 200) {
-    console.log(response.statusText);
-    // Reconnect in 2 second
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    await getClassification();
-  } else {
-    // Display classification
+
+async function getGallery(){
+  let response = await fetch("/gallery");
+  if(response.status === 200){
     let message = await response.json();
-    console.log(message);
-    if (JSON.stringify(message) != "{}") {
-      clContent = '<pre><table><th>label</th><th>value</th>';
-      for (var label of message["results"]) {
-        clContent += '<tr><td>' + label["label"] + '</td><td>' + label["value"] + '</td></tr>';
+     //console.log(message);
+     let content ='';
+
+     message.forEach(item=>{
+      content += '<div class="col-lg-3 col-md-4 col-6"><a href="#" class="d-block mb-4 h-100"><p style="color: #ffc107;">'+item.label+'</p>';
+      if(item.typ ==='image'){
+        content += '<img class="img-fluid img-thumbnail" src="./content/'+ item.name + '" alt="">';
+      }else{
+        content += '<audio  style="width:100%" controls ><source src="./content/'+item.name+ '" type="audio/wav"></audio>';
       }
-      clContent += '</table>';
-      clContent += 'Anomaly level: ' + message["anomaly"] + '</pre>';
-      document.getElementById('classification').innerHTML = clContent;
-    }
-    
-    // Call subscribe() again to get the next message after 1 second
-    await new Promise(r => setTimeout(r, 1000));
-    await getClassification();
+      
+      content += '</a></div>'
+     })
+     document.getElementById('gallery').innerHTML = content;
+
   }
+
+  await new Promise(r => setTimeout(r, 5000));
+  await getGallery();
 }
 
-getClassification();
+getGallery();
+// async function getClassification() {
+//   let response = await fetch("/classification");
+//   console.log("fetching");
+
+//   if (response.status == 502) {
+//     await getClassification();
+//   } else if (response.status != 200) {
+//     console.log(response.statusText);
+//     // Reconnect in 2 second
+//     await new Promise(resolve => setTimeout(resolve, 2000));
+//     await getClassification();
+//   } else {
+//     // Display classification
+//     let message = await response.json();
+//     console.log(message);
+//     if (JSON.stringify(message) != "{}") {
+//       clContent = '<pre><table><th>label</th><th>value</th>';
+//       for (var label of message["results"]) {
+//         clContent += '<tr><td>' + label["label"] + '</td><td>' + label["value"] + '</td></tr>';
+//       }
+//       clContent += '</table>';
+//       clContent += 'Anomaly level: ' + message["anomaly"] + '</pre>';
+//       document.getElementById('classification').innerHTML = clContent;
+//     }
+    
+//     // Call subscribe() again to get the next message after 1 second
+//     await new Promise(r => setTimeout(r, 1000));
+//     await getClassification();
+//   }
+// }
+
+//getClassification();
