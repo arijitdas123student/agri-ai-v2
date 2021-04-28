@@ -40,7 +40,7 @@ $ cd agri-ai-v2
 $ balena login
 $ balena push agri-ai-v2
 ```
-## Future Improvements
+## Scope of improvement
 * Add support for threshold value to the python script in [balena-cam](https://github.com/arijitdas123student/agri-ai-v2/blob/master/balena-cam/app/server.py) folder.
 * Usage of Object-Detection block that has been released recently on EI.
 * Make use of the EI Python Linux SDK that will help in providing more accuracy/object detection ability.
@@ -48,9 +48,6 @@ $ balena push agri-ai-v2
 
 You are welcome to contribue to the above following improvements that will greatly help the project and moreover the community! :)
 Please make sure to open a [PR](https://github.com/arijitdas123student/agri-ai-v2/pulls)/[file](https://github.com/arijitdas123student/agri-ai-v2/issues) an issue with your ideas if you wsih to add something more to this Open-Source project.
-
-## Credits 
-This project is based on the popular [edge-impulse-balena-cam](https://github.com/edgeimpulse/balena-cam-tinyml) repository and we are thankful to the all the contributors of the project.
 
 ## Additional Information
 
@@ -74,3 +71,6 @@ BalenaCam advanced options are available in [this guide](BALENA-OPTIONS.md).
 - **Firefox** (but see note above)
 - **Safari**
 - **Microsoft Edge** (only mjpeg stream)
+
+## Credits 
+This project is based on the popular [edge-impulse-balena-cam](https://github.com/edgeimpulse/balena-cam-tinyml) repository and we are thankful to the all the contributors of the project.
