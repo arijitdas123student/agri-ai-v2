@@ -58,13 +58,13 @@ This project is based on the popular [edge-impulse-balena-cam](https://github.co
 - A direct WebRTC connection fails in some cases.
 - This current version uses mjpeg streaming when the webRTC connection fails.
 - Chrome browsers will hide the local IP address from WebRTC, making the page appear but no camera view. To resolve this try the following
-  - Navigate to chrome://flags/#enable-webrtc-hide-local-ips-with-mdns and set it to Disabled
+  - Navigate to [chrome://flags/#enable-webrtc-hide-local-ips-with-mdns](chrome://flags/#enable-webrtc-hide-local-ips-with-mdns) and set it to Disabled
   - You will need to relaunch Chrome after altering the setting
 - Firefox may also hide local IP address from WebRTC, confirm following in 'config:about'
   - media.peerconnection.enabled: true
   - media.peerconnection.ice.obfuscate_host_addresses: false
 
-If you wish to test the app in Balena local mode, you'll need to add your Edge Impulse Project ID and API Key in `edgeimpulse-inference/app/downloadWasm.sh`.
+If you wish to test the app in Balena local mode, you'll need to add your Edge Impulse Project ID and API Key in [`edgeimpulse-inference/app/downloadWasm.sh`](edgeimpulse-inference/app/downloadWasm.sh).
 
 BalenaCam advanced options are available in [this guide](BALENA-OPTIONS.md).
 
