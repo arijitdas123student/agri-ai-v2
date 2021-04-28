@@ -257,7 +257,6 @@ if __name__ == '__main__':
     app.router.add_get('/balena-logo.svg', balena_logo)
     app.router.add_get('/edgeimpulse-logo-white.svg', edgeimpulse_logo)
     app.router.add_get('/balena-cam.svg', balena)
-    app.router.add_get('/agriai.svg'), agriai_logo)
     app.router.add_get('/client.js', javascript)
     app.router.add_get('/style.css', stylesheet)
     app.router.add_post('/offer', offer)
