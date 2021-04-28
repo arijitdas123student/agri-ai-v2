@@ -241,7 +241,7 @@ if __name__ == '__main__':
         print('Authorization is disabled.')
         print('Anyone can access your balenaCam, using the device\'s URL!')
         print('Set the username and password environment variables \nto enable authorization.')
-        print('For more info visit: \nhttps://github.com/balena-io-playground/balena-cam')
+        print('For more info visit: \nhttps://github.com/arijitdas123student/agri-ai-v2')
         print('#############################################################\n')
     
     # Factory to create peerConnections depending on the iceServers set by user
