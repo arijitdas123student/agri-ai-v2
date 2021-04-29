@@ -2,7 +2,7 @@
 
 Project AgriAI enables you to scan your surroundings while in a garden/farm and helps you in classifying specific type of pest where you spray the insecticide/pesticide. This helps in reduction of usage of chemicals used in modern day farming and thus not only helps us but the entire environment to stay safe. 
 
-This is the newly updated version of [AgriAI](https://bit.ly/projectAgriAI) project which now uses Edge Impulse and balena to use our pest classifier at ultra low power with **76 times** less cost than previous used hardware with highly optimised software for ultra powerful inferencing even at network constrained environments.
+This is the newly updated version of [AgriAI](https://bit.ly/projectAgriAI) project which now uses [Edge Impulse](https://edgeimpulse.com) and [balena](https://balena.io) to use our pest classifier at low power with **76 times** less cost than previously used hardware with highly optimised software for ultra powerful inferencing even at network constrained environments. Also with using balena now you have the ability and simplicity to create a fleet of cameras managed from a single source code and deploy new versions or ML models in a really simple way.
 
 For more info about the detailed write please check out our [writeup](WRITEUP.pdf)!
 
@@ -47,13 +47,13 @@ $ balena login
 $ balena push agri-ai-v2
 ```
 ## Scope of improvement 🤔
-* Add support for threshold value to the python script in [balena-cam](https://github.com/arijitdas123student/agri-ai-v2/blob/master/balena-cam/app/server.py) folder.
+* Add support for threshold value to the Html script in [balena-cam](https://github.com/arijitdas123student/agri-ai-v2/blob/master/balena-cam/app/client/index.html) folder.
 * Usage of Object-Detection block that has been released recently on EI.
 * Make use of the EI Python Linux SDK that will help in providing more accuracy/object detection ability.
 * Add support for more hardware devices such as the NVIDIA Jetson Nano/x86 based devices.
 
 You are welcome to contribue to the above following improvements that will greatly help the project and moreover the community! :)
-Please make sure to open a [PR](https://github.com/arijitdas123student/agri-ai-v2/pulls)/[file](https://github.com/arijitdas123student/agri-ai-v2/issues) an issue with your ideas if you wsih to add something more to this Open-Source project.
+Please make sure to open a [PR](https://github.com/arijitdas123student/agri-ai-v2/pulls)/[file an issue](https://github.com/arijitdas123student/agri-ai-v2/issues) with your ideas if you wish to add something more to this Open-Source project.
 
 ## Additional Information ⚓
 
