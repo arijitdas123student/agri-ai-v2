@@ -9,7 +9,7 @@ assets:
   logo:
     type: "blob.asset"
     data:
-      url: "https://raw.githubusercontent.com/arijitdas123student/agri-ai-v2/master/logo.jpg"
+      url: "https://raw.githubusercontent.com/arijitdas123student/agri-ai-v2/master/logo.png"
 data:
   applicationConfigVariables:
     - BALENA_HOST_CONFIG_start_x: 1
