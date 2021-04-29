@@ -1,6 +1,6 @@
 # AgriAI V2 🌾💻
 
-Project AgriAI enables you to scan your surroundings while in a garden/farm and helps you in classifying specific type of pest where you spray the insecticide/pesticide. This helps in reduction of usage of chemicals used in modern day farming and thus not only helps us but the entire environment to stay safe. 
+Project AgriAI enables you to scan your surroundings while in a garden/farm and helps you in classifying the specific types of pests where you spray the insecticide/pesticide. This helps in the reduction of the usage of chemicals used in modern-day farming and thus not only helps us but the entire environment to stay safe.
 
 This is the newly updated version of [AgriAI](https://bit.ly/projectAgriAI) project which now uses [Edge Impulse](https://edgeimpulse.com) and [balena](https://balena.io) to use our pest classifier at low power with **76 times** less cost than previously used hardware with highly optimised software for ultra powerful inferencing even at network constrained environments. Also with using balena now you have the ability and simplicity to create a fleet of cameras managed from a single source code and deploy new versions or ML models in a really simple way.
 
