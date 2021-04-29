@@ -46,6 +46,15 @@ $ cd agri-ai-v2
 $ balena login
 $ balena push agri-ai-v2
 ```
+
+After your build has completed now its time to power on the device....once the device is ready it will show as "Online" on the balenaCloud dashboard. Then copy the Local IP Address of your device as shown below.
+
+![LocalIP](https://github.com/arijitdas123student/agri-ai-v2/blob/master/images/Screenshot%20(136)_LI.jpg?raw=true)
+
+And then paste in the Web Browser of your main machine....it will result in an output like the one shown here :
+
+![OutputWebpage](https://github.com/arijitdas123student/agri-ai-v2/blob/master/images/OUTPUT%20v2.jpg?raw=true)
+
 ## Scope of improvement 🤔
 * Add support for threshold value to the Html script in [balena-cam](https://github.com/arijitdas123student/agri-ai-v2/blob/master/balena-cam/app/client/index.html) folder.
 * Usage of Object-Detection block that has been released recently on EI.
