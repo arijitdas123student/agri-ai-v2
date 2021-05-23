@@ -1,6 +1,7 @@
 name: "AgriAI"
 type: "sw.application"
 description: "Pest detection and classification made using Edge Impulse and balena."
+joinable: false
 assets:
   repository:
     type: "blob.asset"
